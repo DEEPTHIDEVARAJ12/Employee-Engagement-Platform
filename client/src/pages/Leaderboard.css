@@ -1,0 +1,50 @@
+@import './Shared.css';
+
+.leaderboard-page__sub {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.leaderboard-list {
+  list-style: none;
+  counter-reset: rank;
+}
+
+.leaderboard-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.leaderboard-item__rank {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  background: var(--bg-elevated);
+  border-radius: 10px;
+  color: var(--text-muted);
+}
+
+.leaderboard-item__rank--top {
+  background: var(--accent);
+  color: white;
+}
+
+.leaderboard-item__main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.leaderboard-item__count {
+  font-size: 0.9rem;
+  color: var(--accent-light);
+}

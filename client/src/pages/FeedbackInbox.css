@@ -1,0 +1,28 @@
+@import './Shared.css';
+
+.feedback-inbox-list {
+  list-style: none;
+}
+
+.feedback-inbox-item {
+  margin-bottom: 1rem;
+}
+
+.feedback-inbox-item__message {
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.feedback-inbox-item__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.feedback-inbox-item__actions {
+  display: flex;
+  gap: 0.5rem;
+}

@@ -1,0 +1,21 @@
+@import './Shared.css';
+
+.profile-form {
+  max-width: 420px;
+}
+
+.profile-form .form-input:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.profile-form__role {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.profile-form__role strong {
+  text-transform: capitalize;
+  color: var(--accent-light);
+}

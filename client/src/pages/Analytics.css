@@ -1,0 +1,130 @@
+@import './Shared.css';
+
+.analytics-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  text-align: center;
+}
+
+.stat-card__value {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--accent-light);
+  margin-bottom: 0.25rem;
+}
+
+.stat-card__label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.analytics-charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.chart-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.chart-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.chart-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.chart-bar-label {
+  min-width: 60px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.chart-bar-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 24px;
+}
+
+.chart-bar {
+  height: 20px;
+  background: var(--accent);
+  border-radius: 6px;
+  min-width: 4px;
+}
+
+.chart-bar--accent {
+  background: linear-gradient(90deg, var(--accent), #8b5cf6);
+}
+
+.chart-bar-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  min-width: 2rem;
+}
+
+.chart-empty {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.top-list {
+  list-style: none;
+}
+
+.top-list__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.top-list__item:last-child {
+  border-bottom: none;
+}
+
+.top-list__rank {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-elevated);
+  border-radius: 8px;
+  font-weight: 700;
+  color: var(--accent-light);
+  font-size: 0.9rem;
+}
+
+.top-list__name {
+  flex: 1;
+  color: var(--text);
+}
+
+.top-list__count {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}

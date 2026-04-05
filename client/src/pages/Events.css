@@ -1,0 +1,61 @@
+@import './Shared.css';
+
+.events-form {
+  max-width: 400px;
+  margin-bottom: 1.5rem;
+}
+
+.events-list {
+  list-style: none;
+}
+
+.events-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.events-item__date {
+  flex-shrink: 0;
+  width: 56px;
+  text-align: center;
+  padding: 0.5rem;
+  background: var(--bg-elevated);
+  border-radius: 10px;
+}
+
+.events-item__day {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent-light);
+}
+
+.events-item__month {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.events-item__main {
+  flex: 1;
+  min-width: 0;
+}
+
+.events-item__main h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}
+
+.events-item__location,
+.events-item__desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.events-item__time {
+  font-size: 0.85rem;
+  color: var(--accent-light);
+}

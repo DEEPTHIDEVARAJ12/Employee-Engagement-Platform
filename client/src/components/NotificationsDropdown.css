@@ -1,0 +1,130 @@
+.notif-dropdown {
+  position: relative;
+}
+
+.notif-dropdown__trigger {
+  position: relative;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  border-radius: 8px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.notif-dropdown__trigger:hover {
+  color: var(--text);
+  background: var(--bg-elevated);
+}
+
+.notif-dropdown__badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: white;
+  background: var(--accent);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notif-dropdown__backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+}
+
+.notif-dropdown__panel {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+  width: 320px;
+  max-height: 400px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.notif-dropdown__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.notif-dropdown__mark-all {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent-light);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.notif-dropdown__list {
+  list-style: none;
+  overflow-y: auto;
+  max-height: 320px;
+}
+
+.notif-dropdown__item {
+  border-bottom: 1px solid var(--border);
+}
+
+.notif-dropdown__item:last-child {
+  border-bottom: none;
+}
+
+.notif-dropdown__item--unread {
+  background: rgba(99, 102, 241, 0.06);
+}
+
+.notif-dropdown__item-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.75rem 1rem;
+  color: inherit;
+}
+
+.notif-dropdown__item-link strong {
+  font-size: 0.9rem;
+}
+
+.notif-dropdown__item-link span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.notif-dropdown__item-link em {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-style: normal;
+}
+
+.notif-dropdown__empty,
+.notif-dropdown__loading {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}

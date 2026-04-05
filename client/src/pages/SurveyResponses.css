@@ -1,0 +1,58 @@
+@import './Shared.css';
+
+.survey-responses__count {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.responses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.response-card {
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.response-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.response-card__anon {
+  color: var(--accent-light);
+}
+
+.response-card__date {
+  margin-left: auto;
+}
+
+.response-answer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.response-answer:last-child {
+  margin-bottom: 0;
+}
+
+.response-answer strong {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.response-answer span {
+  color: var(--text);
+}

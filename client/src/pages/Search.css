@@ -1,0 +1,47 @@
+@import './Shared.css';
+
+.search-page__form {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+}
+
+.search-page__input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.search-page__section {
+  margin-bottom: 1.5rem;
+}
+
+.search-page__section h2 {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.search-page__section ul {
+  list-style: none;
+}
+
+.search-page__section li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.search-page__meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-left: 0.5rem;
+}
+
+.search-page__empty {
+  color: var(--text-muted);
+}

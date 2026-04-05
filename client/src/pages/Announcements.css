@@ -1,0 +1,124 @@
+@import './Shared.css';
+
+.announcements-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.announcement-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.announcement-card__link {
+  flex: 1;
+  min-width: 0;
+  color: inherit;
+}
+
+.announcement-card__link:hover {
+  color: var(--accent-light);
+}
+
+.announcement-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.35rem;
+  color: var(--text);
+}
+
+.announcement-card__preview {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.announcement-card__meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.announcement-card__pinned {
+  margin-right: 0.5rem;
+  color: var(--accent-light);
+}
+
+.announcement-detail__pinned {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--accent-light);
+  margin-bottom: 0.75rem;
+}
+
+.announcement-detail__content {
+  white-space: pre-wrap;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.announcement-detail__meta {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.announcement-comments {
+  margin-top: 1.5rem;
+}
+
+.announcement-comments h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.announcement-comments__form {
+  margin-bottom: 1rem;
+}
+
+.announcement-comments__form .form-textarea {
+  margin-bottom: 0.5rem;
+}
+
+.announcement-comments__list {
+  list-style: none;
+}
+
+.announcement-comments__list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.announcement-comments__list li p {
+  margin: 0.35rem 0 0;
+  color: var(--text);
+}
+
+.announcement-comments__date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: normal;
+}
+
+.announcements__actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card {
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  margin-bottom: 1rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
