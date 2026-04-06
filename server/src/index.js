@@ -42,7 +42,7 @@ import { fileURLToPath } from 'url'
 
 const app = express()
 const PORT = process.env.PORT || 5000
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/worksphere'
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://deepthidevaraj2005_db_user:1bX1oSAXfeprbuR7@worksphere.ojifpxg.mongodb.net/?appName=worksphere'
 
 app.use(cors({ origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175', 'http://localhost:5176', 'http://localhost:5177', 'http://localhost:5178', 'http://localhost:5179', 'http://localhost:5180'], credentials: true }))
 app.use(express.json())
